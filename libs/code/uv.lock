@@ -422,7 +422,7 @@ name = "build"
 version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "(os_name == 'nt' and platform_machine != 'x86_64') or (os_name == 'nt' and sys_platform != 'darwin')" },
+    { name = "colorama", marker = "os_name == 'nt'" },
     { name = "packaging" },
     { name = "pyproject-hooks" },
 ]
@@ -2695,7 +2695,7 @@ wheels = [
 
 [[package]]
 name = "langchain-modal"
-version = "0.0.8"
+version = "0.0.9"
 source = { editable = "../partners/modal" }
 dependencies = [
     { name = "deepagents" },
