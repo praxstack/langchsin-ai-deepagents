@@ -422,7 +422,7 @@ name = "build"
 version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "(os_name == 'nt' and platform_machine != 'x86_64') or (os_name == 'nt' and sys_platform != 'darwin')" },
+    { name = "colorama", marker = "os_name == 'nt'" },
     { name = "packaging" },
     { name = "pyproject-hooks" },
 ]
@@ -937,7 +937,7 @@ test = [
 
 [[package]]
 name = "deepagents-code"
-version = "0.2.15"
+version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "aiosqlite" },
