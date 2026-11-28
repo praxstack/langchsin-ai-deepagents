@@ -422,7 +422,7 @@ name = "build"
 version = "1.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "colorama", marker = "(os_name == 'nt' and platform_machine != 'x86_64') or (os_name == 'nt' and sys_platform != 'darwin')" },
+    { name = "colorama", marker = "os_name == 'nt'" },
     { name = "packaging" },
     { name = "pyproject-hooks" },
 ]
@@ -2512,7 +2512,7 @@ wheels = [
 
 [[package]]
 name = "langchain-daytona"
-version = "0.0.9"
+version = "0.0.10"
 source = { editable = "../partners/daytona" }
 dependencies = [
     { name = "daytona" },
